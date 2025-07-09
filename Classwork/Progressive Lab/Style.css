@@ -1,9 +1,13 @@
-h1, p{
+h1, h2, h3{
     text-align: center;
+    font-family: 'Arial Narrow Bold', sans-serif;
 }
+
 body{
-    background-color: gray;
+    background-color: rgb(3, 0, 20);
     color: white;
+
+    margin-left: 20px;
 }
 
 .center{
