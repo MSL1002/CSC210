@@ -3,6 +3,10 @@ h1, h2, h3{
     font-family: 'Arial Narrow Bold', sans-serif;
 }
 
+p{
+    text-align: center;
+}
+
 body{
     background-color: rgb(3, 0, 20);
     color: white;
