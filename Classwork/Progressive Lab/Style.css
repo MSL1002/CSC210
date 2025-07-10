@@ -47,6 +47,12 @@ aside.interests{
   border-left: 4px;
 }
 
+aside iframe{
+  width: 12rem;
+
+  border-color: black;
+}
+
 .tagline{
   font-style: italic;
   font-size: 1.2rem;
