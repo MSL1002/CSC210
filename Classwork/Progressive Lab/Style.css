@@ -13,7 +13,6 @@ header{
     padding: 2rem;
     border-radius: 10px;
     margin-bottom: 2rem;
-
     font-family: 'Arial Narrow Bold', sans-serif
 }
 
@@ -21,42 +20,93 @@ header h1{
   font-size: 2rem;
 }
 
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+}
+
 .main{
   max-width: 1200px;
   margin: auto;
 }
 
-.container #about{
-  padding: 1rem;
-  margin-left: 30rem;
-
-  width: 15rem;
-  height: auto;
-
-  background-color: rgb(17, 15, 26);
-  border: 5px rgb(20, 19, 27);
-
-  /* make a small box around this, seperating it from the rest of the page */
-  
+body{
+    background-color: rgb(3, 0, 20);
+    color: white;
+    line-height: 1.6;
+    padding: 2rem;
 }
 
-aside.interests{
-  padding: 1rem;
-  margin-top: 1rem;
-  border-left: 4px;
-  border-left: 4px;
+
+/* Main Page Style */
+.split-hero{
+  display: flex;
+  align-items: stretch;
+  gap: 2rem;
+  max-width: 1000px; /* Makes the whole thing smaller */
+  margin: 0 auto; /* Centers it on the page */
+
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+
+/* Image section - left side */
+.split-hero #img_article{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.split-hero #img_article img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Optional: makes image look nicer */
+}
+
+/* Text section - right side */
+.about-container{
+  flex: 1;
+  padding: 1rem; /* Reduced padding */
+  background-color: rgb(17, 15, 26);
+  border: 5px solid rgb(20, 19, 27);
+  border-radius: 10px;
+}
+
+.fav-list-container{
+  max-width: 20rem;
+  padding: 1.5rem; /* Reduced padding */
+
+  margin: 0 auto;
+
+  background-color: rgb(17, 15, 26);
+  border: 5px solid rgb(20, 19, 27);
+  border-radius: 10px;
+}
+
+.about-container h2{
+  margin-bottom: 1rem;
+  color: white;
+}
+
+#about-heading{
+  font-size: 25px;
+  margin-left: 3rem;
 }
 
 aside iframe{
-  width: 12rem;
-
-  border-color: black;
+  width: 100%;
+  height: 20rem;
+  border: 2px solid black;
+  border-radius: 5px;
 }
 
 .tagline{
   font-style: italic;
   font-size: 1.2rem;
-
   margin-top: 0.5rem;
 }
 
@@ -69,23 +119,22 @@ nav ul {
   flex-wrap: wrap;
 }
 
-/* Img caption */
-#img_article p{
-  text-align: center;
+#favorites{
+  background-color: rgb(17, 15, 26);
 }
 
-#img_article{
-  align-items: center;
+#favorites td {
+  padding: 0px 12px;
 }
 
-
-body{
-    background-color: rgb(3, 0, 20);
-    color: white;
-
-    line-height: 1.6;
-    padding: 2rem;
+#favorites tr:nth-child(even) {
+  background-color: black;
 }
+
+#favorites tr:nth-child(odd) {
+  background-color: rgb(20, 19, 27);
+}
+
 
 .center{
     display:block;
@@ -116,4 +165,16 @@ a:active {
   color: yellow;
   background-color: transparent;
   text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .split-hero {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .about-container {
+    padding: 1rem;
+  }
 }
