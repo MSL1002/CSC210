@@ -11,3 +11,7 @@ clickButton.addEventListener("click", () =>{
     scoreDisplay.textContent = score;
 
 });
+
+
+// RPS game
+
