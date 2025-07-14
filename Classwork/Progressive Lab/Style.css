@@ -109,7 +109,7 @@ nav ul {
   margin-left: .5rem;
 }
 
-aside p{
+.about-text p{
   width: 101%;
   height: 21rem;
   border: 2px solid rgb(11, 11, 19);
@@ -178,6 +178,15 @@ aside p{
   margin-left: 5rem;
   text-align: left;
   font-size: 2rem;
+}
+
+.future-text p{
+  width: 101%;
+  height: auto;
+  border: 2px solid rgb(11, 11, 19);
+  background-color: rgb(11, 11, 19);
+  border-radius: 5px;
+  padding-left: 3px;
 }
 
 /* Plans Styles */
