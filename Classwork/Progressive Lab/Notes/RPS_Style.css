@@ -1,0 +1,53 @@
+body{
+    background-color: rgb(3, 0, 20);
+    color: white;
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.game-wrapper{
+    display:flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container{
+    background-color: rgb(17, 15, 26);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 10 black;
+    width: 300px;
+    text-align: center;
+}
+
+button{
+    font-size: 1rem;
+    padding: .8rem 1.2rem;
+    margin: .5rem;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(21, 16, 43);
+    color: white;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover{
+    background-color: rgb(0, 0, 0);
+}
+
+#score, #rps-result{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.rps-buttons{
+    display:flex;
+    justify-content: cneter;
+    flex-wrap: wrap;
+}

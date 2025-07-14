@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewpoint" content="width=device-width, initial-scale=1.0">
+
+        <meta property="og:title" content="CSC210 - Intro to Web">
+        <meta property="og:type" content="website">
+
+        <link rel="icon" type="img/svg+xml" href="MsD.png">
+        <title> RPC Game </title>
+        
+        <link rel="stylesheet" href="RPS_Style.css">
+    </head>
+
+    <body>
+        <div class="game-wrapper">
+
+            <!-- clicking game -->
+            <div class="container">
+                <h1>Game</h1>
+                <p>Score: <span id="score">0</span></p>
+
+                <button id="click-button">Click Me</button>
+            </div>
+
+            <!-- RPS game -->
+            <div clas="container">
+                <h1>Rock Paper Scissors</h1>
+                <div class="rps-button">
+                    <button class="rps" data-choice="rock">Rock</button>
+                    <button class="rps" data-choice="paper">Paper</button>
+                    <button class="rps" data-choice="scissors">Scissors</button>
+                </div>
+
+                <p>You chose: <span id="player-choice">-</span></p>
+                <p>Comp chose: <span id="comp-choice">-</span></p>
+                <p>Result: <span id="rps-result">-</span></p>
+
+            </div>
+        </div>
+
+        <script src="RPS_Script.js"></script>
+
+    </body>
+</html>
