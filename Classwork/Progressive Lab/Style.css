@@ -1,3 +1,36 @@
+:root{
+  --bgColor: rgb(3, 0, 20);
+  --txtColor: white;
+  --borderColor: rgb(27, 31, 44);
+  --boxColor: rgb(11, 11, 19);
+
+  --buttonHover: black;
+
+  --accent: rgb(20, 19, 27);
+
+  --linkColor: orange;
+  --linkVisitedColor: pink;
+  --linkActiveColor: yellow;
+  --linkHoverColor: rgb(255, 116, 17);
+}
+
+.lightmode{
+  --bgColor: rgb(230, 230, 230);
+  --txtColor: rgb(0, 0, 0);
+  --borderColor: rgb(134, 134, 134);
+  --boxColor: rgb(189, 189, 189);
+
+  --buttonHover: rgb(212, 212, 212);
+
+  --accent: rgb(219, 219, 219);
+
+  --linkColor: rgb(31, 29, 27);
+  --linkVisitedColor: rgb(255, 29, 161);
+  --linkActiveColor: rgb(255, 115, 0);
+  --linkHoverColor: rgb(31, 31, 31);
+}
+
+
 *{
   margin: 0;
   padding: 0;
@@ -25,21 +58,25 @@ footer{
   left: 0;
   bottom: 0;
   width: 100%;
-  color: white;
+  color: var(--txtColor);
 }
 
 #switch-mode{
-  color: white;
+  color: var(--txtColor);
 
   font-size: 1rem;
 
   height: 3rem;
   width: 7rem;
 
-  background-color: rgb(39, 38, 44);
-  border: 5px solid rgb(0, 0, 0);
+  background-color: var(--boxColor);
+  border: 5px solid var(--borderColor);
   
   border-radius: 20px;
+}
+
+#switch-mode:hover{
+  background-color: var(--buttonHover);
 }
 
 .main{
@@ -55,8 +92,8 @@ footer{
 }
 
 body{
-  background-color: rgb(3, 0, 20);
-  color: white;
+  background-color: var(--bgColor);
+  color: var(--txtColor);
   line-height: 1.6;
   padding: 2rem;
 }
@@ -106,8 +143,8 @@ nav ul {
 .about-container{
   flex: 1;
   padding: 1rem;
-  background-color: rgb(17, 15, 26);
-  border: 5px solid rgb(20, 19, 27);
+  background-color: var(--boxColor);
+  border: 5px solid var(--borderColor);
   border-radius: 10px;
 
   max-width: fit-content;
@@ -115,7 +152,7 @@ nav ul {
 
 .about-container h2{
   margin-bottom: 1rem;
-  color: white;
+  color: var(--txtColor);
 }
 
 #about-heading{
@@ -126,8 +163,8 @@ nav ul {
 .about-text p{
   width: 101%;
   height: 21rem;
-  border: 2px solid rgb(11, 11, 19);
-  background-color: rgb(11, 11, 19);
+  border: 2px solid var(--borderColor);
+  background-color: var(--boxColor);
   border-radius: 5px;
   padding-left: 3px;
 }
@@ -142,13 +179,13 @@ nav ul {
 
   margin: 0 auto;
 
-  background-color: rgb(17, 15, 26);
-  border: 5px solid rgb(20, 19, 27);
+  background-color: var(--boxColor);
+  border: 5px solid var(--borderColor);
   border-radius: 10px;
 }
 
 #favorites{
-  background-color: rgb(17, 15, 26);
+  background-color: var(--boxColor);
 }
 
 #favorites td {
@@ -156,11 +193,11 @@ nav ul {
 }
 
 #favorites tr:nth-child(even) {
-  background-color: black;
+  background-color: var(--buttonHover);
 }
 
 #favorites tr:nth-child(odd) {
-  background-color: rgb(20, 19, 27);
+  background-color: var(--accent);
 }
 
 /* Futre plans / quote styles */
@@ -172,14 +209,14 @@ nav ul {
   width: 900;
   margin:0 auto;
 
-  background-color: rgb(17, 15, 26);
-  border: 2px solid rgb(20, 19, 27);
+  background-color: var(--boxColor);
+  border: 2px solid var(--borderColor);
   border-radius: 8px;
 }
 
 .quote-container {
-  border: 2px solid rgb(11, 11, 19);
-  background-color: rgb(11, 11, 19);
+  border: 2px solid var(--borderColor);
+  background-color: var(--boxColor);
   border-radius: 8px;
 }
 
@@ -197,8 +234,8 @@ nav ul {
 .future-text p{
   width: 101%;
   height: auto;
-  border: 2px solid rgb(11, 11, 19);
-  background-color: rgb(11, 11, 19);
+  border: 2px solid var(--borderColor);
+  background-color: var(--boxColor);
   border-radius: 5px;
   padding-left: 3px;
 }
@@ -209,8 +246,8 @@ nav ul {
   flex: 1;
   padding: 1rem;
 
-  background-color: rgb(17, 15, 26);
-  border: 5px solid rgb(20, 19, 27);
+  background-color: var(--boxColor);
+  border: 5px solid var(--borderColor);
   border-radius: 10px;
 
   margin: 0 auto;
@@ -221,7 +258,7 @@ nav ul {
 
 .future-txt-container h2{
   margin-bottom: 1rem;
-  color: white;
+  color: var(--txtColor);
 }
 
 .future-txt-container #future-heading{
@@ -233,8 +270,8 @@ nav ul {
   flex: 1;
   padding: 1rem;
 
-  background-color: rgb(17, 15, 26);
-  border: 5px solid rgb(20, 19, 27);
+  background-color: var(--boxColor);
+  border: 5px solid var(--borderColor);
   border-radius: 10px;
 
   margin: 0 auto;
@@ -256,25 +293,25 @@ nav ul {
 
 /* Link Styles */
 a:link {
-  color: orange;
+  color: var(--linkColor);
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: pink;
+  color: var(--linkVisitedColor);
   background-color: transparent;
   text-decoration: none;
 }
 
 a:hover {
-  color: rgb(255, 116, 17);
+  color: var(--linkHoverColor);
   background-color: transparent;
   text-decoration: underline;
 }
 
 a:active {
-  color: yellow;
+  color: var(--linkActiveColor);
   background-color: transparent;
   text-decoration: underline;
 }
