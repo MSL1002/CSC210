@@ -55,10 +55,10 @@ footer{
 }
 
 body{
-    background-color: rgb(3, 0, 20);
-    color: white;
-    line-height: 1.6;
-    padding: 2rem;
+  background-color: rgb(3, 0, 20);
+  color: white;
+  line-height: 1.6;
+  padding: 2rem;
 }
 
 .tagline{
