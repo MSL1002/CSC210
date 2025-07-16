@@ -143,3 +143,17 @@ a:active {
   background-color: transparent;
   text-decoration: underline;
 }
+
+
+/* what if the user wants to print out site? */
+@media print{
+  
+  #switch-mode{
+    display: none;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+}
