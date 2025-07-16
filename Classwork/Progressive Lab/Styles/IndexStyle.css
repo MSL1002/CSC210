@@ -23,7 +23,7 @@
   border: 5px solid var(--borderColor);
   border-radius: 10px;
 
-  max-width: fit-content;
+  max-width: max-content;
 }
 
 .about-container h2{

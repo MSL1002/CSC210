@@ -7,41 +7,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const modeswitch = document.getElementById("switch-mode");
 
-
     const enableLightmode = () => {
-        document.body.classList.add("lightmode")
+        document.documentElement.classList.add("lightmode")
         localStorage.setItem("lightmode", "active")
-
         modeswitch.textContent = "Enable Dark Mode"
     }
 
     const disableLightmode = () => {
-        document.body.classList.remove("lightmode")
-        localStorage.setItem("lightmode", null)
+        document.documentElement.classList.remove("lightmode")
+        localStorage.removeItem("lightmode")
+        modeswitch.textContent = "Enable Light Mode"
     }
 
     // if the lightmode value = active, enables lightmode
-    if(lightmode=="active"){
+    if(lightmode === "active"){
         enableLightmode();
-    }
-    else{
+    } else {
         disableLightmode();
     }
 
     modeswitch.addEventListener("click", () => {
-
         lightmode = localStorage.getItem("lightmode")
-        if(lightmode != "active") {
+        if(lightmode !== "active") {
             enableLightmode();
-        } 
-        else{
+        } else {
             disableLightmode();
-            modeswitch.textContent = "Enable Light Mode"
         }
-
     });
 });
-
-
-
-

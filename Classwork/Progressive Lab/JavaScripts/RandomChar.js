@@ -1,0 +1,1 @@
+// TODO: make a script that, when you click the isaac characater, switches them to a random other character
