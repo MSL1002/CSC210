@@ -24,6 +24,9 @@ document.addEventListener("DOMContentLoaded", () => {
     if(lightmode=="active"){
         enableLightmode();
     }
+    else{
+        disableLightmode();
+    }
 
     modeswitch.addEventListener("click", () => {
 
