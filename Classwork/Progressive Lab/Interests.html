@@ -1,6 +1,17 @@
 <!DOCTYPE html5>
 <html lang="en">
     <head>
+
+        <script>
+            if(localStorage.getItem("lightmode") == "active"){
+                document.documentElement.classList.add("lightmode")
+            }
+            else(
+                document.documentElement.classList.remove("lightmode")
+            )
+        </script>
+
+
         <meta charset="UTF-8">
         <meta name = "viewpoint" content="width=device-width, initial-scale=1.0">
         <meta name = "description" content="CSC210 - Intro to Web">
