@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-// starting mode will always be dark (as it should be)
+    
+    // starting mode will always be dark (as it should be)
 
     //looks into browser's memory and gets lightmode value
     let lightmode = localStorage.getItem("lightmode");
@@ -10,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const enableLightmode = () => {
         document.body.classList.add("lightmode")
         localStorage.setItem("lightmode", "active")
-        
+
         modeswitch.textContent = "Enable Dark Mode"
     }
 
