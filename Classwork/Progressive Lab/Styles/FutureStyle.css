@@ -1,0 +1,90 @@
+/* Futre plans / quote styles */
+
+/* Quote Styles */
+.quote{
+  padding: 1.5rem;
+  text-align: center;
+  width: 900;
+  margin:0 auto;
+
+  background-color: var(--boxColor);
+  border: 2px solid var(--borderColor);
+  border-radius: 8px;
+}
+
+.quote-container {
+  border: 2px solid var(--borderColor);
+  background-color: var(--boxColor);
+  border-radius: 8px;
+}
+
+.quote q{
+  font-size: 2rem;
+}
+
+.quote p{
+  padding-top: 1.5rem;
+  margin-left: 5rem;
+  text-align: left;
+  font-size: 2rem;
+}
+
+.future-text p{
+  width: 101%;
+  height: auto;
+  border: 2px solid var(--borderColor);
+  background-color: var(--boxColor);
+  border-radius: 5px;
+  padding-left: 3px;
+}
+
+/* Plans Styles */
+
+.future-txt-container{
+  flex: 1;
+  padding: 1rem;
+
+  background-color: var(--boxColor);
+  border: 5px solid var(--borderColor);
+  border-radius: 10px;
+
+  margin: 0 auto;
+  margin-top: 7rem;
+
+  max-width: 40rem;
+} 
+
+.future-txt-container h2{
+  margin-bottom: 1rem;
+  color: var(--txtColor);
+}
+
+.future-txt-container #future-heading{
+  font-size: 25px;
+  margin-left: .5rem;
+}
+
+.future-img-container{
+  flex: 1;
+  padding: 1rem;
+
+  background-color: var(--boxColor);
+  border: 5px solid var(--borderColor);
+  border-radius: 10px;
+
+  margin: 0 auto;
+  margin-top: 7rem;
+
+  max-width: 41rem;
+} 
+
+.future-img-container p{
+  text-align: center;
+
+  font-size: 2rem;
+}
+
+#img_future{
+  margin-top: 2rem;
+  padding-right: 1rem;
+}

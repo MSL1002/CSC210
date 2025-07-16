@@ -1,0 +1,28 @@
+/* Favorites list */
+
+.fav-list-container{
+  max-width: 20rem;
+  padding: 1.5rem; /* Reduced padding */
+
+  margin: 0 auto;
+
+  background-color: var(--boxColor);
+  border: 5px solid var(--borderColor);
+  border-radius: 10px;
+}
+
+#favorites{
+  background-color: var(--boxColor);
+}
+
+#favorites td {
+  padding: 0px 12px;
+}
+
+#favorites tr:nth-child(even) {
+  background-color: var(--buttonHover);
+}
+
+#favorites tr:nth-child(odd) {
+  background-color: var(--accent);
+}
