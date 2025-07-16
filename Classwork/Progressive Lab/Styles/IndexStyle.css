@@ -1,5 +1,5 @@
 
-/* Image section*/
+/* Image section - left side */
 .split-hero #img_article{
   flex: 1;
   display: flex;
@@ -39,8 +39,5 @@
 .about-text p{
   width: 101%;
   height: 21rem;
-  border: 2px solid var(--borderColor);
-  background-color: var(--boxColor);
-  border-radius: 5px;
-  padding-left: 3px;
+  padding-left: 15px;
 }

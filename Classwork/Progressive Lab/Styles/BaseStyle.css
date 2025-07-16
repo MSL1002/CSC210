@@ -85,13 +85,6 @@ footer{
   margin: auto;
 }
 
-/* Used to center images */
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 body{
   background-color: var(--bgColor);
   color: var(--txtColor);
