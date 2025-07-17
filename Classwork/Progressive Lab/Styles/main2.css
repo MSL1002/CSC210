@@ -13,22 +13,26 @@
   --linkVisitedColor: rgb(255, 0, 255);
   --linkActiveColor: rgb(47, 0, 255);
   --linkHoverColor: rgb(168, 17, 255);
+
+  --backgroundImage: url("../Images/purpleCheckerBoard.jpeg");
 }
 
 .lightmode{
   --bgColor: rgb(230, 230, 230);
   --txtColor: rgb(0, 0, 0);
-  --borderColor: rgb(134, 134, 134);
+  --borderColor: rgb(164, 0, 148);
   --boxColor: rgb(189, 189, 189);
 
   --buttonHover: rgb(212, 212, 212);
 
-  --accent: rgb(219, 219, 219);
+  --accent: rgb(177, 29, 162);
 
   --linkColor: rgb(31, 29, 27);
-  --linkVisitedColor: rgb(255, 29, 161);
+  --linkVisitedColor: rgb(32, 10, 60);
   --linkActiveColor: rgb(255, 115, 0);
   --linkHoverColor: rgb(31, 31, 31);
+
+  --backgroundImage: url("../Images/LightModeCheckerboard.webp");
 }
 
 
@@ -88,7 +92,11 @@ footer{
 }
 
 body{
+  background-image: var(--backgroundImage);
+  background-repeat: repeat;
+
   background-color: var(--bgColor);
+
   color: var(--txtColor);
   line-height: 1.6;
   padding: 2rem;
@@ -138,7 +146,7 @@ nav ul li {
 }
 
 .split-hero #img_article img{
-  max-width: 100%;
+  max-width: 75%;
   height: auto;
   border-radius: 10px;
 
@@ -295,6 +303,15 @@ a:active {
 
 /* Plans Styles */
 
+.future-container{
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: auto;
+  margin-top: 4rem;
+  margin-left: 20rem;
+}
+
 .future-txt-container{
   flex: 1;
   padding: 1rem;
@@ -303,9 +320,7 @@ a:active {
   border: 5px solid var(--borderColor);
   border-radius: 10px;
 
-  margin: 0 auto;
-  margin-top: 7rem;
-
+  margin: 0;
   max-width: 40rem;
 } 
 
@@ -327,8 +342,7 @@ a:active {
   border: 5px solid var(--borderColor);
   border-radius: 10px;
 
-  margin: 0 auto;
-  margin-top: 7rem;
+  margin: 0;
 
   max-width: 41rem;
 } 
