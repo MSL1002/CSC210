@@ -121,7 +121,7 @@ nav ul li {
   display: flex;
   align-items: stretch;
   gap: 2rem;
-  max-width: 1000px;
+  max-width: 80rem;
   margin: 0 auto;
 
   margin-bottom: 5rem;
@@ -148,12 +148,14 @@ nav ul li {
 /* Text section - right side */
 .about-container{
   flex: 1;
+
+  margin-top: 2rem;
   padding: 1rem;
   background-color: var(--boxColor);
   border: 5px solid var(--borderColor);
   border-radius: 10px;
 
-  max-width: max-content;
+  max-height: max-content;
 }
 
 .about-container h2{
