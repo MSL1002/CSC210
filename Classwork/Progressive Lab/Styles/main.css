@@ -202,19 +202,21 @@ a:active {
   border-radius: 10px;
 }
 
-#favorites{
+/* interests list */
+
+#interests{
   background-color: var(--boxColor);
 }
 
-#favorites td {
+#interests td {
   padding: 0px 12px;
 }
 
-#favorites tr:nth-child(even) {
+#interests tr:nth-child(even) {
   background-color: var(--buttonHover);
 }
 
-#favorites tr:nth-child(odd) {
+#interests tr:nth-child(odd) {
   background-color: var(--accent);
 }
 

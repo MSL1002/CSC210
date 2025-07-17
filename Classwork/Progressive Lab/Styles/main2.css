@@ -211,9 +211,32 @@ a:active {
   border-radius: 10px;
 }
 
+#favorites_list li:nth-child(even){
+  background-color: var(--accent);
+}
+
 #interests{
-  
   background-color: var(--boxColor);
+  width: 10%;
+}
+
+/* TODO, make it so it doesn't use split-hero, and just kinda does it all on its own so I can
+ change the layout for this dumb ass assignment,
+ idek what the point of this is */
+
+#interests-img{
+  margin-top: 0rem;
+  max-width: min-content;
+  max-height: min-content;
+}
+
+#interests{
+
+  margin-left: 10%;
+
+  max-width: fit-content;
+  max-height: min-content;
+
 }
 
 #interests td {
