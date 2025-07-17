@@ -103,12 +103,17 @@ body{
 nav ul {
     background-color: var(--accent);
     display: flex;
-    justify-content: center;
+    justify-content: .1rem;
     list-style: none;
-    margin-left: 15rem;
-    width: 50%;
-    gap: 1.5rem;
+    margin: 0 auto;
+    width: 22%;
+    gap: 0;
     flex-wrap: nowrap;
+}
+
+nav ul li {
+    flex: 1; /* Each item takes equal width */
+    text-align: center;
 }
 
 /* splits the page, 1 half has an img one half has text */
@@ -197,7 +202,7 @@ a:active {
 
 .fav-list-container{
   max-width: 20rem;
-  padding: 1.5rem; /* Reduced padding */
+  padding: 1.5rem;
 
   margin: 0 auto;
 
@@ -206,19 +211,20 @@ a:active {
   border-radius: 10px;
 }
 
-#favorites{
+#interests{
+  
   background-color: var(--boxColor);
 }
 
-#favorites td {
+#interests td {
   padding: 0px 12px;
 }
 
-#favorites tr:nth-child(even) {
+#interests tr:nth-child(even) {
   background-color: var(--buttonHover);
 }
 
-#favorites tr:nth-child(odd) {
+#interests tr:nth-child(odd) {
   background-color: var(--accent);
 }
 
