@@ -1,0 +1,328 @@
+/* Default is darkmode */
+:root{ 
+  --bgColor: rgb(59, 0, 51);
+  --txtColor: rgb(206, 206, 206);
+  --borderColor: rgb(122, 0, 106);
+  --boxColor: rgb(26, 14, 25);
+
+  --buttonHover: black;
+
+  --accent: rgb(98, 0, 122);
+
+  --linkColor: pink;
+  --linkVisitedColor: rgb(255, 0, 255);
+  --linkActiveColor: rgb(47, 0, 255);
+  --linkHoverColor: rgb(168, 17, 255);
+}
+
+.lightmode{
+  --bgColor: rgb(230, 230, 230);
+  --txtColor: rgb(0, 0, 0);
+  --borderColor: rgb(134, 134, 134);
+  --boxColor: rgb(189, 189, 189);
+
+  --buttonHover: rgb(212, 212, 212);
+
+  --accent: rgb(219, 219, 219);
+
+  --linkColor: rgb(31, 29, 27);
+  --linkVisitedColor: rgb(255, 29, 161);
+  --linkActiveColor: rgb(255, 115, 0);
+  --linkHoverColor: rgb(31, 31, 31);
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+header{
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    font-family: 'Comic Sans MS', cursive
+}
+
+header h1{
+  font-size: 4rem;
+}
+
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: .45rem;
+  color: var(--txtColor);
+}
+
+#switch-mode{
+  color: var(--txtColor);
+
+  font-size: 1rem;
+
+  height: 3rem;
+  width: 7rem;
+
+  background-color: var(--boxColor);
+  border: 5px solid var(--borderColor);
+  
+  border-radius: 20px;
+}
+
+#switch-mode:hover{
+  background-color: var(--buttonHover);
+}
+
+.main{
+  max-width: 1200px;
+  margin: auto;
+}
+
+body{
+  background-color: var(--bgColor);
+  color: var(--txtColor);
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+.tagline{
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+nav ul {
+    background-color: var(--accent);
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-left: 15rem;
+    width: 50%;
+    gap: 1.5rem;
+    flex-wrap: nowrap;
+}
+
+/* splits the page, 1 half has an img one half has text */
+.split-hero{
+  display: flex;
+  align-items: stretch;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+
+
+/* Image section - left side */
+.split-hero #img_article{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.split-hero #img_article img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+
+  border: 5px solid var(--borderColor);
+}
+
+/* Text section - right side */
+.about-container{
+  flex: 1;
+  padding: 1rem;
+  background-color: var(--boxColor);
+  border: 5px solid var(--borderColor);
+  border-radius: 10px;
+
+  max-width: max-content;
+}
+
+.about-container h2{
+  margin-bottom: 1rem;
+  color: var(--txtColor);
+}
+
+#about-heading{
+  font-size: 25px;
+  margin-left: .5rem;
+}
+
+.about-text p{
+  width: 101%;
+  height: 21rem;
+  padding-left: 15px;
+}
+
+
+/* Link Styles */
+a:link {
+  color: var(--linkColor);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--linkVisitedColor);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--linkHoverColor);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: var(--linkActiveColor);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/* Favorites list */
+
+.fav-list-container{
+  max-width: 20rem;
+  padding: 1.5rem; /* Reduced padding */
+
+  margin: 0 auto;
+
+  background-color: var(--boxColor);
+  border: 5px solid var(--borderColor);
+  border-radius: 10px;
+}
+
+#favorites{
+  background-color: var(--boxColor);
+}
+
+#favorites td {
+  padding: 0px 12px;
+}
+
+#favorites tr:nth-child(even) {
+  background-color: var(--buttonHover);
+}
+
+#favorites tr:nth-child(odd) {
+  background-color: var(--accent);
+}
+
+/* Futre plans / quote styles */
+
+/* Quote Styles */
+.quote{
+  padding: 1.5rem;
+  text-align: center;
+  width: 900;
+  margin:0 auto;
+
+  background-color: var(--boxColor);
+  border: 2px solid var(--borderColor);
+  border-radius: 8px;
+}
+
+.quote-container {
+  border: 2px solid var(--borderColor);
+  background-color: var(--boxColor);
+  border-radius: 8px;
+}
+
+.quote q{
+  font-size: 2rem;
+}
+
+.quote p{
+  padding-top: 1.5rem;
+  margin-left: 5rem;
+  text-align: left;
+  font-size: 2rem;
+}
+
+.future-text p{
+  width: 101%;
+  height: auto;
+  border: 2px solid var(--borderColor);
+  background-color: var(--boxColor);
+  border-radius: 5px;
+  padding-left: 3px;
+}
+
+/* Plans Styles */
+
+.future-txt-container{
+  flex: 1;
+  padding: 1rem;
+
+  background-color: var(--boxColor);
+  border: 5px solid var(--borderColor);
+  border-radius: 10px;
+
+  margin: 0 auto;
+  margin-top: 7rem;
+
+  max-width: 40rem;
+} 
+
+.future-txt-container h2{
+  margin-bottom: 1rem;
+  color: var(--txtColor);
+}
+
+.future-txt-container #future-heading{
+  font-size: 25px;
+  margin-left: .5rem;
+}
+
+.future-img-container{
+  flex: 1;
+  padding: 1rem;
+
+  background-color: var(--boxColor);
+  border: 5px solid var(--borderColor);
+  border-radius: 10px;
+
+  margin: 0 auto;
+  margin-top: 7rem;
+
+  max-width: 41rem;
+} 
+
+.future-img-container p{
+  text-align: center;
+
+  font-size: 2rem;
+}
+
+#img_future{
+  margin-top: 2rem;
+  padding-right: 1rem;
+}
+
+
+/* what if the user wants to print out site? */
+@media print{
+  
+  #switch-mode{
+    display: none;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+}
